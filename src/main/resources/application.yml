@@ -1,5 +1,10 @@
 server:
-  port: 8080
+  port: 8083
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
+
 
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
@@ -9,3 +14,9 @@ springdoc:
   api-docs.path: /api-docs
   swagger-ui.path: /swagger-ui-custom.html
   swagger-ui.operationsSorter: method
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
