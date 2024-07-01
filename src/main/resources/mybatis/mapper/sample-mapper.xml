@@ -8,12 +8,12 @@
         VALUES (#{contents})
     </insert>
 
-    <select id="findAll" resultType="com.newdeal.ledger.sample.vo.Sample">
+    <select id="findAll" resultType="com.newdeal.ledger.sample.dto.Sample">
         SELECT sample_id AS sampleId, contents
         FROM samples
     </select>
 
-    <select id="find" parameterType="long" resultType="com.newdeal.ledger.sample.vo.Sample">
+    <select id="find" parameterType="long" resultType="com.newdeal.ledger.sample.dto.Sample">
         SELECT sample_id AS sampleId, contents
         FROM samples
         WHERE sample_id = #{id}
