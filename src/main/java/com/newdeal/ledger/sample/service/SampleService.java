@@ -6,9 +6,7 @@ import com.newdeal.ledger.sample.mapper.SampleMapper;
 
 import lombok.RequiredArgsConstructor;
 
-@Service
-@RequiredArgsConstructor
-public class SampleService {
-	private final SampleMapper sampleMapper;
+public interface SampleService {
 
+	public int list(); // DB설정 확인
 }

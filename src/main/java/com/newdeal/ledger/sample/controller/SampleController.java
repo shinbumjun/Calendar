@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 @Controller
 @RequiredArgsConstructor
 public class SampleController {
+
 	private final SampleService sampleService;
 
 	/**
@@ -29,6 +30,10 @@ public class SampleController {
 	 */
 	@GetMapping("/index")
 	public String index() {
+
+		int sample = sampleService.list();
+		System.out.println("DB설정 확인 : " + sample);
+
 		return "index"; // 수정
 	}
 

@@ -36,7 +36,6 @@ dependencies {
     // swagger
     //    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.2.0'
 
-
     // flyway
     implementation 'org.flywaydb:flyway-core'
     implementation 'org.flywaydb:flyway-mysql'
@@ -47,6 +46,9 @@ dependencies {
     // db
     runtimeOnly 'com.h2database:h2'
     runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // MyBatis Mapper Annotation
+    implementation 'org.mybatis:mybatis'
 
     // lombok
     compileOnly 'org.projectlombok:lombok'
