@@ -7,5 +7,4 @@ public class Sample {
 	private Long sampleId;
 	private String contents;
 	private String test;
-
 }

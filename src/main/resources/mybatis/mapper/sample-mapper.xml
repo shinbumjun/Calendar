@@ -3,20 +3,10 @@
 
 <mapper namespace="com.newdeal.ledger.sample.mapper.SampleMapper">
 
-    <insert id="save">
-        INSERT INTO samples (contents)
-        VALUES (#{contents})
-    </insert>
-
-    <select id="findAll" resultType="com.newdeal.ledger.sample.dto.Sample">
-        SELECT sample_id AS sampleId, contents
-        FROM samples
-    </select>
-
-    <select id="find" parameterType="long" resultType="com.newdeal.ledger.sample.dto.Sample">
-        SELECT sample_id AS sampleId, contents
-        FROM samples
-        WHERE sample_id = #{id}
+    <!-- int list(); -->
+    <select id="list" resultType="int">
+        SELECT sample_id, contents, test
+        FROM testdb.sample
     </select>
 
 </mapper>

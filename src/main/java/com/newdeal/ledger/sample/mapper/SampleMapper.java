@@ -9,9 +9,6 @@ import com.newdeal.ledger.sample.dto.Sample;
 
 @Mapper
 public interface SampleMapper {
-	void save(Sample sample);
 
-	List<Sample> findAll();
-
-	Optional<Sample> find(Long id);
+	int list(); //
 }
