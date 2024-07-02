@@ -20,3 +20,13 @@ spring:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
+
+# 모니터링
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # 모든 엔드포인트 노출
+  endpoint:
+    prometheus:
+      enabled: true  # Prometheus 엔드포인트 활성화
