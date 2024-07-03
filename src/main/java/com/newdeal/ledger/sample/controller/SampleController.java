@@ -56,5 +56,4 @@ public class SampleController {
 	public String mInsert() {
 		return "mInsert"; // 찰규
 	}
-
 }

@@ -12,7 +12,7 @@
     <title>Registration Form in HTML CSS</title>
     
     <!---Custom CSS File--->
-    <link rel="stylesheet" href="../css/mInsert.css">
+    <link rel="stylesheet" href="../../../resources/static/css/mInsert.css">
     
     <!-- ♣♣♣ font ♣♣♣ -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

@@ -8,5 +8,4 @@
         SELECT sample_id, contents, test
         FROM testdb.sample
     </select>
-
 </mapper>

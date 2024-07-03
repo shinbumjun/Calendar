@@ -16,7 +16,7 @@
 		<title>Yoonicorn 로그인</title>
 	</head>
 	<!-- ♣♣♣ CSS ♣♣♣ -->
-	<link href="../css/login.css" rel="stylesheet">
+	<link href="../../../resources/static/css/login.css" rel="stylesheet">
 	
 	<!-- ♣♣♣ font ♣♣♣ -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -89,7 +89,7 @@
 				  </button>
 			  </div>
 		  </form>
-		<div class="content1" style="background-image: url('../css/img/login.png'); width: 90%; height: 320px; margin:30px auto; display: flex; align-items: center; justify-content: center;">
+		<div class="content1" style="background-image: url('../../../resources/static/css/img/login.png'); width: 90%; height: 320px; margin:30px auto; display: flex; align-items: center; justify-content: center;">
 		  <div class="text" style="color: #d6cfcb; "><strong style="color: yellow">Yoonicorn</strong> 서비스는 항상 당신과 함께합니다.<br><strong>앞써나가는 그룹웨어 시스템 Yoonicorn</strong></div>
 		</div>
 	</body>

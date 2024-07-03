@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* -------- Main -------- */
+
+/* main Hgroup(header h2, h3) setting */
+#create_account hgroup {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    padding: 30px 0px;
+    box-sizing: border-box;
+}
+#create_account h2 {
+    font-size: 40px;
+    color: #2d314d;
+}
+
+#create_account h3 {
+    margin-top: 10px;
+    color: #9698a6;
+}
+
+
+/* create Account(Table) Wrap CSS */
+#createAccountWrap {
+    width: 500px;
+    height: 450px;
+    margin: 80px auto;
+    position: relative;
+}
+
+#create_account table {
+    margin: 0 auto;
+    border: none;
+    border-collapse: collapse;
+}
+
+#create_account table tr td {
+    border-bottom: 1px solid #b5b5b5;
+}
+
+#label {
+    text-indent: 30px;
+    background-color: #f5f5f5;
+}
+
+/* input Setting css */
+#create_account input {
+    width: 200px;
+    height: 30px;
+    margin: 20px 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+}
+
+#create_account input[type="text"] {
+    width: 220px;
+    height: 40px;
+}
+
+#create_account input[type=text]::placeholder {
+    text-indent: 10px;
+}
+
+#create_account input[type="checkbox"] {
+    width: 70px;
+    height: 15px;
+    margin-bottom: 40px;
+}
+
+/* Submit Button CSS Setting */
+#createAccountWrap #create-account-submitButton {
+    position: absolute;
+    bottom: 20px;
+    left:calc(50% - 50px);
+    height: 40px;
+    width: 100px;
+    border: 1px solid #000;
+    background: linear-gradient(
+            120deg,
+            #2bb7da,
+            #31d35c
+    );
+    border-radius: 24px;
+    border: none;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Products Introduce Contents CSS Setting */
+#about-account-products {
+    width: 100%;
+    margin: 0 0 100px 20px;
+}
+
+#products-wrap {
+    width: 1000px;
+    height: 500px;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#products-wrap dl {
+    width: 480px;
+    height: 250px;
+    margin-right: 80px;
+    position: relative;
+}
+
+#products-wrap dt {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 30px 0 20px 50px;
+    color: #2d314d;
+}
+
+#products-wrap dd {
+    margin: 0 0 0 50px;
+    font-size: 18px;
+    color: #9698a6;
+}
+
+/* dl - 앞의 말머리 기호 CSS */
+#products-wrap dl::before {
+    content: "";
+    display: block;
+    width: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    margin: 10px;
+
+    /* color */
+    background: linear-gradient(
+            120deg,
+            #2bb7da,
+            #31d35c
+    );
+
+    /* place */
+    position: absolute;
+    top: -20px;
+    left: -50px;
+
+    /* dl before font Setting */
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff; /* 폰트 컬러는 무슨 색으로? */
+}
+
+/* dl - 앞의 말머리 기호의 번호 순서를 매김 */
+#products-wrap dl:nth-child(1)::before {
+    content: "01";
+}
+
+#products-wrap dl:nth-child(2)::before {
+    content: "02";
+}
+
+#products-wrap dl:nth-child(3)::before {
+    content: "03";
+}
+
+#products-wrap dl:nth-child(4)::before {
+    content: "04";
+}

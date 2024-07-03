@@ -19,8 +19,8 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <!--◁◀◁◀ Header ▶▷▶▷ -->
-<%@ include file="/WEB-INF/views/include/sidebar.jsp"%>
-<%@ include file="/WEB-INF/views/include/header.jsp"%>
+<jsp:include page="../views/include/sidebar.jsp" flush="true" />
+<jsp:include page="../views/include/header.jsp" flush="true" />
 <!--◁◀◁◀ Header ▶▷▶▷ -->
 
 <script>
@@ -216,6 +216,6 @@
 </body>
 
 <!--◁◀◁◀ Footer ▶▷▶▷ -->
-<%@ include file="/WEB-INF/views/include/footer.jsp"%>
+<jsp:include page="../views/include/footer.jsp" flush="true" />
 <!--◁◀◁◀ Footer ▶▷▶▷ -->
 </html>

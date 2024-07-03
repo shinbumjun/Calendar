@@ -11,7 +11,7 @@
  <body>
     <!-- Side navigation -->
 	<div class="sidenav">
-	  <div id="profileImg" style="border: 1px solid lightgray; width: 150px; height: 150px; background-image: url('../css/images/logo.jpg/'); background-size: cover; background-position: center;background-repeat: no-repeat;"></div>
+	  <div id="profileImg" style="border: 1px solid lightgray; width: 150px; height: 150px; background-image: url('../../../../resources/static/images/logo.jpg/'); background-size: cover; background-position: center;background-repeat: no-repeat;"></div>
 	  <strong style="font-size: 20px; color: #c9184a;">${session_name }님</strong>
 	  <a class="sideMenu" href="#">My Page</a>
 	  <a class="sideMenu" href="../email/mailList">받은 이메일</a>
