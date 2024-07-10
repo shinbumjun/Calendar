@@ -1,4 +1,4 @@
-package com.newdeal.ledger.sample.controller;
+package com.newdeal.ledger.acct.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -6,10 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 @RequiredArgsConstructor
-public class CalendarController { // 계좌
+public class acctController { // 계좌
 
-    @GetMapping("/calendar")
+    @GetMapping("/add_acct")
     public String doLogout() {
-        return "calendar";
+        return "add_acct";
     }
+
 }

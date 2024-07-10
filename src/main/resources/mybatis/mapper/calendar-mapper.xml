@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.newdeal.ledger.calendar.mapper.CalendarMapper">
+
+    <!-- List<TransactionDto> findAll(HashMap<Object, String> map); -->
+    <select id="findAll" parameterType="java.util.HashMap" resultType="TransactionDto" >
+        SELECT *
+        FROM transaction
+        WHERE YEAR(date) = #{year}
+        AND MONTH(date) = #{month}
+    </select>
+
+</mapper>
